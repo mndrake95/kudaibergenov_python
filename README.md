@@ -19,7 +19,12 @@ pip install -r requirements.txt
 python main.py
 ```
 
-The program accepts a single input and runs three independent checks:
+The program offers two modes:
+
+- **Mode 1 - Single input:** One value is passed through all three checks independently
+- **Mode 2 - Separate inputs:** Each check receives its own dedicated input
+
+### Checks
 
 1. **Check 1** - If the entered number is greater than 7, prints "Hello"
 2. **Check 2** - If the entered name matches "John", prints "Hello, John"
