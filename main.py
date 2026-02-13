@@ -1,7 +1,7 @@
 
 
 def user_input():
-    s = input()
+    s = input("Enter your value: ")
     return s
 
 def check_number(s):
@@ -54,10 +54,29 @@ def is_it_array(s):
 
 
 if __name__ == "__main__":
-    s = user_input()
-    print("--- Check 1 ---")
-    print(check_number(s))
-    print("--- Check 2 ---")
-    print(look_for_John(s))
-    print("--- Check 3 ---")
-    print(is_it_array(s))
+    while True:
+        print("Choose mode")
+        print("1 - Single input (all checks)")
+        print("2 - Separate inputs (one per checks)")
+        mode = input("Enter mode: ")
+        if mode == "1":
+            s = user_input()
+            print("--- Check 1 ---")
+            print(check_number(s))
+            print("--- Check 2 ---")
+            print(look_for_John(s))
+            print("--- Check 3 ---")
+            print(is_it_array(s))
+            print("Thank you!")
+            break
+        elif mode == "2":
+            s1 = input("Enter a number: ")
+            print(check_number(s1))
+            s2 = input("Enter a name: ")
+            print(look_for_John(s2))
+            s3 = input("Enter an array: ")
+            print(is_it_array(s3))
+            print("Thank you!")
+            break
+        else: 
+            print("You need to choose mode.")
