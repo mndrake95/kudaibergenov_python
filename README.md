@@ -10,6 +10,17 @@ QA Automation test task.
 ## Installation
 
 ```bash
+python -m venv venv
+```
+
+Activate the virtual environment:
+
+- Windows: `venv\Scripts\activate`
+- macOS/Linux: `source venv/bin/activate`
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
