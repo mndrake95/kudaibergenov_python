@@ -60,3 +60,13 @@ No. The sequence is not correct. The bracket counts do not match:
 **2b. What needs to be changed to make it correct?**
 
 Change the first `]` (position 13) to `)`. This produces `[((())()(()))]` which is a valid bracket sequence.
+
+### Bracket Validator (bonus)
+
+A `validate_brackets(s)` function was written as a bonus solution to Task 2 in a separate file `brackets.py`. It uses a stack-based algorithm to check whether a bracket sequence is valid.
+
+```bash
+python brackets.py
+```
+
+**Note:** I do not fully understand the stack-based approach yet and plan to study it further. The algorithm was implemented with guidance, and while it works correctly, I want to deepen my understanding of how the stack tracks bracket nesting before I consider this concept fully learned.

@@ -17,3 +17,5 @@ def validate_brackets(s):
         return "Sequence is valid"
     else:
         return f"Not valid - {len(stack)} unclosed bracket(s)"
+    
+print(validate_brackets(s))
